@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+<body>
+  <form>
+    <h1>Contact Us</h1>
+    <div class="name-container">
+      <div class="form-item">
+        <label>First Name <span>*</span></label>
+        <input id="first-name" type="text" maxlength="20">
+        <p>This field is required</p>
+      </div>
+      <div class="form-item">
+        <label>Last Name <span>*</span></label>
+        <input id="last-name" type="text" maxlength="20">
+        <p>This field is required</p>
+      </div>
+    </div>
+    <div class="form-item">
+      <label>Email Address <span>*</span></label>
+      <input type="email">
+      <p>Please enter a valid email address</p>
+    </div>
+    <div class="form-item">
+      <label>Query Type <span>*</span></label>
+      <div class="radio-wrapper">
+        <div class='radio-container'>
+          <input type="radio" class="general" name="choice" value="General Enquiry">
+          <label>General Enquiry</label>
+        </div>
+        <div class="radio-container">
+          <input type="radio" class="support" name="choice" value="Support Request">
+          <label>Support Request</label>
+        </div>
+      </div>
+      <p>Please select a query type</p>
+    </div>
+    <div class="form-item">
+      <label>Message <span>*</span></label>
+      <textarea rows="4" name="test"></textarea>
+      <p>This field is required</p>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" value="checked">
+      <label>I consent to being contacted by the team <span>*</span></label>
+    </div>
+    <p class="consentP">To submit this form, please consent to being contacted</p>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
